@@ -1,0 +1,9 @@
+body {
+  background: #f8fafc;
+}
+.card {
+  border-radius: 1.25rem;
+}
+.btn-primary {
+  min-width: 140px;
+}
