@@ -49,4 +49,65 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('pageshow', function(event) {
     if (event.persisted && form) form.reset();
   });
+
+  const chatBoard = document.getElementById('chatBoard');
+  const chatToggleBtn = document.getElementById('chatToggleBtn');
+  const chatCloseBtn = document.getElementById('chatCloseBtn');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+
+  if (!chatBoard || !chatToggleBtn || !chatCloseBtn || !chatMessages || !chatForm || !chatInput) {
+    console.error('Chatboard elements not found!');
+    return;
+  }
+
+  // Show chat board
+  chatToggleBtn.addEventListener('click', function() {
+    chatBoard.classList.add('open');
+    chatToggleBtn.style.display = 'none';
+    chatMessages.innerHTML = '';
+    setTimeout(function() {
+      addMessage("Hello! I'm Nadia's assistant. How can I help you today?");
+    }, 300);
+  });
+
+  // Hide chat board
+  chatCloseBtn.addEventListener('click', function() {
+    chatBoard.classList.remove('open');
+    chatToggleBtn.style.display = 'flex';
+  });
+
+  // Add message to chat
+  function addMessage(message, isUser = false) {
+    const msgDiv = document.createElement('div');
+    msgDiv.className = 'chat-message ' + (isUser ? 'user' : 'bot');
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    bubble.textContent = message;
+    msgDiv.appendChild(bubble);
+    chatMessages.appendChild(msgDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // Simple bot response
+  function getBotResponse(userMsg) {
+    const msg = userMsg.toLowerCase();
+    if (msg.includes('hello') || msg.includes('hi')) return "Hi there! How can I help you?";
+    if (msg.includes('project')) return "Check out my projects above!";
+    if (msg.includes('contact')) return "You can use the contact form or email me at fombutuhn@gmail.com.";
+    return "I'm here to answer questions about Nadia's portfolio!";
+  }
+
+  // Handle chat form submit
+  chatForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userMsg = chatInput.value.trim();
+    if (!userMsg) return;
+    addMessage(userMsg, true);
+    chatInput.value = '';
+    setTimeout(function() {
+      addMessage(getBotResponse(userMsg));
+    }, 700);
+  });
 });
