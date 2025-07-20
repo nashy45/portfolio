@@ -16,7 +16,7 @@
   <header class="navbar">
     <div class="container">
       <div class="logo">
-        <span class="logo-icon">NF</span>
+        <div class="logo-icon">NF</div>
         <span class="logo-text">Nadia Fombutuh</span>
       </div>
       <nav role="navigation">
@@ -35,6 +35,84 @@
     </div>
   </header>
 
+  <!-- Welcome Section with Background Effects -->
+  <section class="welcome-section" id="welcome">
+    <div class="welcome-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+      </div>
+      <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+    </div>
+    <div class="welcome-content">
+      <div class="welcome-text">
+        <div class="welcome-badge">
+          <i class="fas fa-star"></i>
+          <span>Welcome to My Portfolio</span>
+        </div>
+        <h1 class="welcome-title">
+          <span class="title-line">Hello, I'm</span>
+          <span class="title-highlight">Nadia Fombutuh</span>
+          <span class="title-line">Full Stack Developer</span>
+        </h1>
+        <p class="welcome-description">
+          Crafting digital experiences with passion and precision. 
+          Let's build something amazing together.
+        </p>
+        <div class="welcome-actions">
+          <a href="#about" class="welcome-btn primary">
+            <i class="fas fa-rocket"></i>
+            Explore My Work
+          </a>
+          <a href="#contact" class="welcome-btn secondary">
+            <i class="fas fa-paper-plane"></i>
+            Let's Connect
+          </a>
+        </div>
+      </div>
+      <div class="welcome-visual">
+        <div class="code-animation">
+          <div class="code-line">
+            <span class="code-keyword">const</span> 
+            <span class="code-variable">developer</span> = {
+          </div>
+          <div class="code-line">
+            <span class="code-property">name:</span> 
+            <span class="code-string">'Nadia Fombutuh'</span>,
+          </div>
+          <div class="code-line">
+            <span class="code-property">skills:</span> 
+            <span class="code-string">['Full Stack', 'UI/UX', 'Problem Solving']</span>,
+          </div>
+          <div class="code-line">
+            <span class="code-property">passion:</span> 
+            <span class="code-string">'Creating amazing web experiences'</span>
+          </div>
+          <div class="code-line">};</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
   <!-- Hero / About Section -->
   <section id="about" class="hero">
     <div class="hero-background">
@@ -45,23 +123,61 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text animate">
-          <div class="hero-badge">
-            <i class="fas fa-code"></i>
-            <span>Full Stack Developer</span>
+          <div class="hero-badge animate-badge">
+            <i class="fas fa-user-tie"></i>
+            <span>Professional Profile</span>
+            <div class="badge-pulse"></div>
           </div>
-          <h1>Hello, I'm <span class="highlight">Nadia Fombutuh</span></h1>
-          <p class="hero-description">Passionate about creating innovative web solutions that make a difference. I specialize in building modern, scalable applications with clean code and exceptional user experiences.</p>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number">2+</span>
+          <h1 class="hero-title-animated">
+            <span class="title-greeting">Hello, I'm</span>
+            <span class="highlight animated-highlight">Nadia Fombutuh</span>
+            <span class="title-subtitle">Digital Innovator</span>
+          </h1>
+          <p class="hero-description typing-text">A results-driven Full Stack Developer and Digital Solutions Specialist with comprehensive expertise in web development, data analysis, and creative design. I deliver innovative digital solutions that drive business growth and enhance user experiences.</p>
+          
+          <!-- Professional Summary -->
+          <div class="about-story interactive-card">
+            <div class="card-header">
+              <h3><i class="fas fa-briefcase"></i> Professional Summary</h3>
+              <div class="card-indicator"></div>
+            </div>
+            <p>With over 2 years of experience in the technology sector, I specialize in developing scalable web applications, creating compelling visual designs, and implementing data-driven solutions. My expertise spans from front-end development to back-end architecture, complemented by strong analytical skills and creative problem-solving abilities.</p>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Web Development</span>
+              <span class="expertise-tag">Data Analysis</span>
+              <span class="expertise-tag">Creative Design</span>
+              <span class="expertise-tag">Problem Solving</span>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="hero-stats modern-stats">
+            <div class="stat-item animated-stat">
+              <div class="stat-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <span class="stat-number" data-target="2">2</span>
               <span class="stat-label">Years Experience</span>
             </div>
-            
-            <div class="stat-item">
-              <span class="stat-number">100%</span>
+            <div class="stat-item animated-stat">
+              <div class="stat-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <span class="stat-number" data-target="100">2</span>
               <span class="stat-label">Client Satisfaction</span>
             </div>
+            <div class="stat-item animated-stat">
+              <div class="stat-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <span class="stat-number" data-target="50">5</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
           </div>
+
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
               <i class="fas fa-eye"></i>
@@ -72,6 +188,7 @@
               Get In Touch
             </a>
           </div>
+          
           <div class="social-links">
             <a href="https://github.com/Nashy001" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <i class="fab fa-github"></i>
@@ -89,14 +206,110 @@
         </div>
         <div class="hero-image animate delay-1">
           <div class="profile-container">
-            <img src="images/Snapchat-50901355.jpg" alt="Nadia Fombutuh profile photo" class="profile-pic" />
-            <div class="profile-overlay">
-              <div class="tech-stack">
-                <span class="tech-item">HTML</span>
-                <span class="tech-item">CSS</span>
-                <span class="tech-item">JS</span>
-                <span class="tech-item">PHP</span>
-                <span class="tech-item">Python</span>
+            <div class="profile-frame">
+              <div class="profile-border">
+                <img src="images/Snapchat-50901355.jpg" alt="Nadia Fombutuh profile photo" class="profile-pic" />
+                <div class="profile-glow"></div>
+              </div>
+              <div class="floating-elements">
+                <div class="floating-icon" style="--delay: 0s">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1s">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2s">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3s">
+                  <i class="fab fa-php"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 4s">
+                  <i class="fab fa-python"></i>
+                </div>
+              </div>
+              <div class="profile-badge">
+                <i class="fas fa-code"></i>
+                <span>Available for Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Content Below Hero -->
+      <div class="about-additional-content">
+        <div class="content-grid">
+          <!-- Education Section -->
+          <div class="education-section">
+            <h3 class="section-title-modern"><i class="fas fa-graduation-cap"></i> Academic Background</h3>
+            <div class="education-timeline">
+              <div class="education-item timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="education-content">
+                  <div class="education-degree">Bachelor of Applied Computing </div>
+                  <div class="education-school"> Institute Universitaire de la cote </div>
+                  <div class="education-year">2023 - 2026</div>
+                  <div class="education-details">Management of Information Systems</div>
+                  <div class="education-progress">
+                    <div class="progress-bar">
+                      <div class="progress-fill" data-progress="70"></div>
+                    </div>
+                    <span class="progress-text">In Progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Section -->
+          <div class="certifications-section">
+            <h3 class="section-title-modern"><i class="fas fa-certificate"></i> Professional Certifications & Skills</h3>
+            <div class="certifications-grid">
+              <div class="certification-item skill-card">
+                <div class="cert-icon floating-icon" style="margin-right: 16px; align-self: flex-start;">
+                  <i class="fas fa-table"></i>
+                </div>
+                <div class="cert-details">
+                  <h4>Microsoft Excel Specialist</h4>
+                  <p>Advanced data analysis, complex formulas, pivot tables, and business intelligence solutions</p>
+                  <div class="skill-metrics">
+                    <div class="skill-bar">
+                      <div class="skill-fill" data-skill="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="certification-item skill-card">
+                <div class="cert-icon floating-icon" style="margin-right: 16px; align-self: flex-start;">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <div class="cert-details">
+                  <h4>Adobe Illustrator Specialist</h4>
+                  <p>Professional vector graphics, brand identity design, digital illustration</p>
+                  <div class="skill-metrics">
+                    <div class="skill-bar">
+                      <div class="skill-fill" data-skill="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="certification-item skill-card">
+                <div class="cert-icon floating-icon" style="margin-right: 16px; align-self: flex-start;">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="cert-details">
+                  <h4>Full-Stack Web Development</h4>
+                  <p>Comprehensive web application development, responsive design, and modern framework expertise</p>
+                  <div class="skill-metrics">
+                    <div class="skill-bar">
+                      <div class="skill-fill" data-skill="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -108,42 +321,238 @@
   <!-- Skills Section -->
   <section id="skills" class="skills-section">
     <div class="container">
-      <div class="section-title animate">
-        <h2>Skills & Expertise</h2>
+      <div class="section-header">
+        <div class="section-title animate">
+          <h2>Technical Skills & Expertise</h2>
+          <p class="section-subtitle">Comprehensive development skills across multiple technologies and frameworks</p>
+        </div>
       </div>
-      <div class="skills-list">
-        <div class="skill-card animate delay-1">
-          <h3><i class="fas fa-laptop-code"></i> Front End</h3>
-          <ul>
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>Responsive Design</li>
-            <li>UI/UX Design</li>
-          </ul>
+      
+      <div class="skills-overview">
+        <div class="skills-category animate delay-1">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="category-info">
+              <h3>Frontend Development</h3>
+              <p>Modern web technologies and responsive design</p>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 & CSS3</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Responsive Design</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">UI/UX Design</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+          </div>
         </div>
-        <div class="skill-card animate delay-1">
-          <h3><i class="fas fa-server"></i> Back End</h3>
-          <ul>
-            <li>Python (Django, Flask)</li>
-            <li>PHP (Laravel, Core PHP)</li>
-           
-          </ul>
+
+        <div class="skills-category animate delay-2">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="category-info">
+              <h3>Backend Development</h3>
+              <p>Server-side programming and API development</p>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python (Django/Flask)</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PHP (Laravel/Core)</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">RESTful APIs</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Server Management</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="65"></div>
+              </div>
+              <span class="skill-percentage">65%</span>
+            </div>
+          </div>
         </div>
-        <div class="skill-card animate delay-2">
-          <h3><i class="fas fa-database"></i> Databases</h3>
-          <ul>
-            <li>MySQL</li>
-            <li>Database Design</li>
-            <li>PostgreSQL</li>
-          </ul>
+
+        <div class="skills-category animate delay-3">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="category-info">
+              <h3>Database & Data Management</h3>
+              <p>Database design, management, and data analysis</p>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Database Design</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Microsoft Excel</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+          </div>
         </div>
-        <div class="skill-card animate delay-2">
-          <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
-          <ul>
-            <li>Git & GitHub</li>
-            <li>Docker</li>
-          
-          </ul>
+
+        <div class="skills-category animate delay-4">
+          <div class="category-header">
+            <div class="category-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="category-info">
+              <h3>Tools & Development</h3>
+              <p>Version control, deployment, and development tools</p>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Docker</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="60"></div>
+              </div>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Adobe Illustrator</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">VS Code</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-summary">
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="summary-content">
+            <h4>Skill Proficiency Overview</h4>
+            <p>Continuously expanding expertise across full-stack development, with strong focus on modern web technologies and best practices.</p>
+            <div class="proficiency-stats">
+              <div class="stat">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Categories</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">16</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -244,42 +653,48 @@
       <div class="section-title animate">
         <h2>Contact Me</h2>
       </div>
-      <div class="contact-card animate delay-1">
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mnnvebbb" method="POST" autocomplete="off">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" class="form-control" placeholder="How can I help you?" required></textarea>
-          </div>
-          <button type="submit" class="btn submit-btn">Send Message</button>
-        </form>
+      <div class="contact-content">
+        <div class="contact-card animate delay-1">
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xzzvdawo" method="POST" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="How can I help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn submit-btn">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-image">
+          <img src="images/96d1cc416bfc7a2a0a16feb235f1defa.jpg" alt="Contact Visual" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Chat Board -->
- <button class="chat-toggle" id="chatToggleBtn" title="Chat with Nadia">
-    <i class="fas fa-comments"></i>
-  </button>
-  <!-- Chat Board -->
-  <div class="chat-board" id="chatBoard">
-    <div class="chat-header">
-      <span>Chat with Nadia</span>
-      <button class="chat-close" id="chatCloseBtn">&times;</button>
-    </div>
-    <div class="chat-messages" id="chatMessages"></div>
-    <form class="chat-input-area" id="chatForm" autocomplete="off">
-      <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit"><i class="fas fa-paper-plane"></i></button>
-    </form>
+  <!-- Chat Board (place this at the very end of <body>) -->
+<!-- Chat Toggle Button -->
+<button id="chatToggleBtn">💬</button>
+
+<!-- Chat Window -->
+<div id="chatBoard">
+  <div class="chat-header">
+    <span>Assistant</span>
+    <button id="chatCloseBtn">✖</button>
   </div>
+  <div id="chatMessages"></div>
+  <form id="chatForm" class="chat-form">
+    <input type="text" id="chatInput" placeholder="Type a message...">
+    <button type="submit">Send</button>
+  </form>
+</div>
+
 
   <!-- Footer -->
   <footer class="footer">
